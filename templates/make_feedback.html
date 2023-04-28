@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{{ super() }}
+{% block title %}<Title>Туроператор VISALL</Title>{% endblock %}
+{% block body %}
+    <div class="body">
+    <h1>Здравствуйте, {{username}}!</h1>
+    <h1>Оставить отзыв</h1>
+    {% for cat, msg in get_flashed_messages(True) %}
+    <div class="flash {{cat}}">{{msg}}</div>
+{% endfor %}
+<form action="/profile/{{username}}" method="post" class="form-contact">
+    <p><label> Имя </label> <input type="text" name="username" value="" required></p>
+    <p><label> Сообщение </label></p>
+    <p><textarea name="message" rows="7" cols="40" ></textarea></p>
+    <p><input type="submit" value="Отправить"></p>
+</form>
+    </div>
+{% endblock %}

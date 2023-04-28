@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{{ super() }}
+{% block title %}<Title>Туроператор VISALL</Title>{% endblock %}
+{% block body %}
+<div class="px-4 pt-5 my-5 text-center border-bottom" bis_skin_checked="1">
+    <h1 class="display-4 fw-bold">Туроператор VISALL</h1>
+    <div class="col-lg-6 mx-auto" bis_skin_checked="1">
+      <p class="lead mb-4"> Раскрасьте свой отпуск вместе с VISALL </p>
+    </div>
+    <div class="overflow-hidden" style="max-height: 30vh;" bis_skin_checked="1">
+      <div class="container px-5" bis_skin_checked="1">
+        <img src="/static/img/img1.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+<div class="container col-xxl-8 px-4 py-5" bis_skin_checked="1">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5" bis_skin_checked="1">
+      <div class="col-10 col-sm-8 col-lg-6" bis_skin_checked="1">
+        <img src="/static/img/img2.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6" bis_skin_checked="1">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Уникальные предложения</h1>
+        <p class="lead">Ежегодное обновление туров</p>
+      </div>
+    </div>
+  </div>
+
+<div class="container my-5" bis_skin_checked="1">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg" bis_skin_checked="1">
+      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3" bis_skin_checked="1">
+        <h1 class="display-4 fw-bold lh-1">Индивидуальный план вашего путешествия</h1>
+        <p class="lead">Для незабываемого отдыха</p>
+      </div>
+      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg" bis_skin_checked="1">
+          <img class="rounded-lg-3" src="/static/img/img3.jpg" alt="" width="720">
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
